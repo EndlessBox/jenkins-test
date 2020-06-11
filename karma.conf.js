@@ -43,7 +43,7 @@ module.exports = function (config) {
       },
     },
     browsers: ["ChromeHeadlessNoSandbox" /*, 'Chrome'*/],
-    singleRun: false,
+    singleRun: true,
     restartOnFileChange: true,
   });
 };
