@@ -29,7 +29,7 @@ module.exports = function (config) {
     },
     reporters: ["progress", "kjhtml", "junit"],
     junitReporter: {
-      outputDir: "test-results",
+      // outputDir: "test-results",
       outputFile: "unit-test-results.xml",
     },
     port: 9876,
@@ -42,7 +42,7 @@ module.exports = function (config) {
         flags: ["--no-sandbox"],
       },
     },
-    browsers: ["ChromeHeadlessNoSandbox" /*, 'Chrome'*/],
+    browsers: ["ChromeHeadlessNoSandbox" /*, 'Chrome', PhantomJs*/],
     singleRun: true,
     restartOnFileChange: true,
   });
