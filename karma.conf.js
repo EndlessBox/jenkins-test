@@ -28,11 +28,11 @@ module.exports = function (config) {
       fixWebpackSourcePaths: true,
     },
     reporters: ["progress", "kjhtml", "junit"],
-    junitReporter: {
-      outputDir: "test-results",
-      outputFile: "unit-test-results.xml",
-      useBrowserName: false
-    },
+    // junitReporter: {
+    //   outputDir: "test-results",
+    //   outputFile: "unit-test-results.xml",
+    //   useBrowserName: false
+    // },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
